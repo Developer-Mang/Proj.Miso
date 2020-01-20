@@ -1,4 +1,7 @@
+@charset "utf-8";
+
 header{
+    z-index: 2;
     position:fixed;
     top:0;
     width:100%;
@@ -33,14 +36,17 @@ a.hereBt{
     letter-spacing: 1px;
 }
 
-#sec1{
-    height:722px;
+main{
+    margin-top:130px;
+}
+
+.visual{
     background-size: cover, auto;
     background-image: url("https://global-uploads.webflow.com/5dca6326f628e03041212a3f/5df886d4143ebc2faa0b4b01_GettyImages-a10685150.jpg");
     margin-top:130px;
 }
 
-#sec1>div{
+.backgroundCover{
     height:722px;
     background-color: rgba(0,0,0,0.25);
     color:#fff;
@@ -50,19 +56,16 @@ a.hereBt{
     box-sizing: border-box;
 }
 
-#sec2{
+.content{
     width:100%;
     max-width:940px;
     margin:0 auto;
 }
 
-.menuCont{
-    margin:40px 0;
-}
-
-.menu-ul>li{
-    float:left;
-    width:12.5%;
+.contentMenu{
+    display:flex;
+    justify-content: space-evenly;
+    margin:40px 0 20px;
 }
 
 .menuBt{
@@ -80,4 +83,50 @@ a.hereBt{
     color:#32343a;
     border-bottom:1.5px solid #32343a;
     opacity:0.5;
+}
+
+.contentsList{
+    display:none;
+}
+
+.contentsList.show{
+    display:flex;
+    flex-flow: row wrap;
+    margin:10px 0;
+}
+
+.list{
+    width:31%;
+    text-align: center;
+    margin:15px 1.16%;
+}
+
+.list div{
+    height:210px;
+    position: relative;
+    overflow: hidden;
+}
+
+.list img{
+    height:100%;
+    position: relative;
+    left:50%;
+    margin-left:-100%;
+}
+
+.list p{
+    font-size:20px;
+    margin:10px;
+}
+
+.listA:hover div{
+    background-color: black;
+}
+
+.listA:hover img{
+    opacity: .8;
+}
+
+.listA:hover p{
+    color:#32343a;
 }
