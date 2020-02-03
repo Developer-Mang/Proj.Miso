@@ -73,10 +73,6 @@ main{
 }
 
 .main__tablist-item{
-    width:100%;
-}
-
-.main__tablist-item button{
     display:block;
     width:100%;
     font-weight:bold;
@@ -86,7 +82,7 @@ main{
     box-sizing:border-box;
 }
 
-.main__tablist-item button.checked, .main__tablist-item button:hover{
+.main__tablist-item[aria-selected="true"] , .main__tablist-item:hover{
     padding-bottom:7.5px;
     color:#32343a;
     border-bottom:1.5px solid #32343a;
@@ -97,44 +93,84 @@ main{
     display:none;
 }
 
-.main__panel.main__panel--visible{
+.tabpanel__list{
     display:flex;
     flex-flow: row wrap;
     margin:10px 0;
 }
 
-.main__panel-item{
+.tabpanel__list-item{
     width:31%;
     text-align: center;
     margin:15px 1.16%;
 }
 
-.main__panel-item div{
+.tabpanel__list-item a{
+    display:block;
+}
+
+/* item 내부 div,p 예제 */
+.tabpanel__list-item div{
     height:210px;
     position: relative;
     overflow: hidden;
 }
 
-.main__panel-item img{
+.tabpanel__list-item div img{
     height:100%;
     position: relative;
     left:50%;
     margin-left:-100%;
 }
 
-.main__panel-item p{
+.tabpanel__list-item p{
     font-size:20px;
     margin:10px;
 }
 
-.main__panel-item a:hover div{
+.tabpanel__list-item a:hover div, .tabpanel__list-item a:focus div{
     background-color: black;
 }
 
-.main__panel-itemA:hover img{
+.tabpanel__list-item a:hover img, .tabpanel__list-item a:focus img{
     opacity: .8;
 }
 
-.main__panel-itemA:hover p{
+.tabpanel__list-item a:hover p, .tabpanel__list-item a:focus p{
     color:#32343a;
+    font-weight: 600;
 }
+
+/* item 내부 figure 예제 */
+.tabpanel__list-item figure{
+    z-index: 0;
+    position: relative;
+}
+
+.tabpanel__list-item figure img{
+    width:100%;
+    margin:0;
+}
+.tabpanel__list-item figcation{
+    display:block;
+    font-size:20px;
+    margin:10px;
+}
+
+.tabpanel__list-item a:hover figure::after, .tabpanel__list-item a:focus figure::after{
+    z-index: -1;
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:84%;
+    background-color:black;
+}
+
+.tabpanel__list-item a:hover figcation, .tabpanel__list-item a:focus figcation{
+    color:#32343a;
+    font-weight: 600;
+}
+
+/* p,img 위치 스왑 예제 */
