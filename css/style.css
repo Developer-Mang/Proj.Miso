@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+/* Header */
 header{
     z-index: 2;
     position:fixed;
@@ -11,24 +12,26 @@ header{
     box-sizing: border-box;
 }
 
-.logoCont{
+/* Header Logo */
+.header__logo{
     float:left;
     width:90px;
 }
 
-.logoBt{
+.header__logo a{
     display: block;
 }
 
-.logoBt>img{
+.header__logo img{
     width:90px;
 }
 
-.hereBtCont{
+/* Header Navigation */
+header nav{
     float:right;
 }
 
-a.hereBt{
+header nav a{
     font-size:11px;
     font-weight:900;
     color: #055cf5;
@@ -36,17 +39,14 @@ a.hereBt{
     letter-spacing: 1px;
 }
 
-main{
-    margin-top:130px;
-}
-
+/* Visual */
 .visual{
     background-size: cover, auto;
     background-image: url("https://global-uploads.webflow.com/5dca6326f628e03041212a3f/5df886d4143ebc2faa0b4b01_GettyImages-a10685150.jpg");
     margin-top:130px;
 }
 
-.backgroundCover{
+.visual__text--bgcover{
     height:722px;
     background-color: rgba(0,0,0,0.25);
     color:#fff;
@@ -56,77 +56,85 @@ main{
     box-sizing: border-box;
 }
 
-.content{
+main{
+    margin-top:130px;
+}
+
+main{
     width:100%;
     max-width:940px;
     margin:0 auto;
 }
 
-.contentMenu{
+.main__tablist{
     display:flex;
     justify-content: space-evenly;
     margin:40px 0 20px;
 }
 
-.menuBt{
+.main__tablist-item{
+    width:100%;
+}
+
+.main__tablist-item button{
     display:block;
     width:100%;
     font-weight:bold;
     line-height:2;
     text-align:center;
     padding:9px;
-    box-sizing: border-box;
+    box-sizing:border-box;
 }
 
-.menuBt:hover{
+.main__tablist-item button.checked, .main__tablist-item button:hover{
     padding-bottom:7.5px;
     color:#32343a;
     border-bottom:1.5px solid #32343a;
     opacity:0.5;
 }
 
-.contentsList{
+.main__panel{
     display:none;
 }
 
-.contentsList.show{
+.main__panel.main__panel--visible{
     display:flex;
     flex-flow: row wrap;
     margin:10px 0;
 }
 
-.list{
+.main__panel-item{
     width:31%;
     text-align: center;
     margin:15px 1.16%;
 }
 
-.list div{
+.main__panel-item div{
     height:210px;
     position: relative;
     overflow: hidden;
 }
 
-.list img{
+.main__panel-item img{
     height:100%;
     position: relative;
     left:50%;
     margin-left:-100%;
 }
 
-.list p{
+.main__panel-item p{
     font-size:20px;
     margin:10px;
 }
 
-.listA:hover div{
+.main__panel-item a:hover div{
     background-color: black;
 }
 
-.listA:hover img{
+.main__panel-itemA:hover img{
     opacity: .8;
 }
 
-.listA:hover p{
+.main__panel-itemA:hover p{
     color:#32343a;
 }

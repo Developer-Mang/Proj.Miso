@@ -15,195 +15,176 @@
 </head>
 
 <body>
-    <header class="floatClear">
-        <div class="logoCont"><a href="#" class="logoBt"><img
+    <header class="clearfix">
+        <h1 class="header__logo"><a href="#"><img
                     src="https://global-uploads.webflow.com/5dca6326f628e03041212a3f/5e0188d0b7fd08beae0e3deb_miso%20logo_blue.png"
-                    alt="miso_logo"></a></div>
-        <div class="hereBtCont"><a class="hereBt" href="#">HOME</a></div>
+                    alt="미소 더 많은 서비스"></a></h1>
+        <nav><a href="#">HOME</a></nav>
     </header>
+    <section class="visual">
+        <h2 class="a11y-hidden">Visual영역</h2>
+        <p class="visual__text--bgcover">생활의 모든 것, 미소</p>
+    </section>
     <main>
-        <div class="visual">
-            <div class="backgroundCover">
-                <h1>생활의 모든 것, 미소</h1>
-            </div>
-        </div>
-        <section class="content">
-            <h2 class="hidden">Items</h2>
-            <ul class="contentMenu">
-                <li><button class="menuBt">인테리어</button></li>
-                <li><button class="menuBt">바닥/마루</button></li>
-                <li><button class="menuBt">문/창문</button></li>
-                <li><button class="menuBt">가전제품</button></li>
-                <li><button class="menuBt">수도/전기</button></li>
-                <li><button class="menuBt">가구</button></li>
-                <li><button class="menuBt">철거/청소</button></li>
-                <li><button class="menuBt">도우미</button></li>
-            </ul>
+        <ul class="main__tablist">
+            <li id="interior-tab" class="main__tablist-item"><button class="checked">인테리어</button></li>
+            <li id="floor-tab" class="main__tablist-item"><button>바닥/마루</button></li>
+            <li id="door-window-tab" class="main__tablist-item"><button>문/창문</button></li>
+            <li id="appliances-tab" class="main__tablist-item"><button>가전제품</button></li>
+            <li id="waterworks-electronics-tab" class="main__tablist-item"><button>수도/전기</button></li>
+            <li id="furniture-tab" class="main__tablist-item"><button>가구</button></li>
+            <li id="demolition-tab" class="main__tablist-item"><button>철거/청소</button></li>
+            <li id="helper-tab" class="main__tablist-item"><button>도우미</button></li>
+        </ul>
+        <section class="main__tabpanels">
             <!-- interior -->
-            <ul class="contentsList interior show">
-                <li class="list interior-1">
-                    <a href="#" class="listA">
+            <ul id="interior-panel" class="main__panel interior main__panel--visible">
+                <li class="main__panel-item interior-1">
+                    <a href="#">
                         <div>
-                            <img
-                                src="https://global-uploads.webflow.com/5dca6326f628e03041212a3f/5dedd171f88fbc98763ba6f2_64a143c3e8741ab52173e21e383cd222%20copy.jpg"
+                            <img src="https://global-uploads.webflow.com/5dca6326f628e03041212a3f/5dedd171f88fbc98763ba6f2_64a143c3e8741ab52173e21e383cd222%20copy.jpg"
                                 alt="도배장판 시공 이미지">
                         </div>
                         <p>도배장판 시공</p>
                     </a>
                 </li>
-                <li class="list interior-2">
-                    <a href="#" class="listA">
+                <li class="main__panel-item interior-2">
+                    <a href="#">
                         <div>
-                            <img
-                                src="https://global-uploads.webflow.com/5dca6326f628e03041212a3f/5dfafdf85b18184f0ab5360e_GettyImages-1165752554.jpg"
+                            <img src="https://global-uploads.webflow.com/5dca6326f628e03041212a3f/5dfafdf85b18184f0ab5360e_GettyImages-1165752554.jpg"
                                 alt="눈줄 시공 이미지">
                         </div>
                         <p>눈줄 시공</p>
                     </a>
                 </li>
-                <li class="list interior-3">
-                    <a href="#" class="listA">
+                <li class="main__panel-item interior-3">
+                    <a href="#">
                         <div>
-                            <img
-                                src="https://global-uploads.webflow.com/5dca6326f628e03041212a3f/5df9d06b9bcdffd9a8a15083_GettyImages-1185795211.jpg"
+                            <img src="https://global-uploads.webflow.com/5dca6326f628e03041212a3f/5df9d06b9bcdffd9a8a15083_GettyImages-1185795211.jpg"
                                 alt="주방후드 교체/설치 이미지">
                         </div>
                         <p>주방후드 교체/설치</p>
                     </a>
                 </li>
-                <li class="list interior-4">
-                    <a href="#" class="listA">
+                <li class="main__panel-item interior-4">
+                    <a href="#">
                         <div>
-                            <img
-                                src="https://global-uploads.webflow.com/5dca6326f628e03041212a3f/5dca73f3dff894fea0b4e65f_taylor-wilcox-cABI3p0F7rU-unsplash.jpg"
+                            <img src="https://global-uploads.webflow.com/5dca6326f628e03041212a3f/5dca73f3dff894fea0b4e65f_taylor-wilcox-cABI3p0F7rU-unsplash.jpg"
                                 alt="싱크대 시공 이미지">
                         </div>
                         <p>싱크대 시공</p>
                     </a>
                 </li>
-                <li class="list interior-5">
-                    <a href="#" class="listA">
+                <li class="main__panel-item interior-5">
+                    <a href="#">
                         <div>
-                            <img
-                                src="https://global-uploads.webflow.com/5dca6326f628e03041212a3f/5dcba05aa7706932b666efb5_charlescopy.jpg"
+                            <img src="https://global-uploads.webflow.com/5dca6326f628e03041212a3f/5dcba05aa7706932b666efb5_charlescopy.jpg"
                                 alt="타일 시공 이미지">
                         </div>
                         <p>타일 시공</p>
                     </a>
                 </li>
-                <li class="list interior-6">
-                    <a href="#" class="listA">
+                <li class="main__panel-item interior-6">
+                    <a href="#">
                         <div>
-                            <img
-                                src="https://global-uploads.webflow.com/5dca6326f628e03041212a3f/5dcb990f741bd74f4592f828_ialicante-mediterranean-homes-JDBVXignFdA-unsplash.jpg"
+                            <img src="https://global-uploads.webflow.com/5dca6326f628e03041212a3f/5dcb990f741bd74f4592f828_ialicante-mediterranean-homes-JDBVXignFdA-unsplash.jpg"
                                 alt="인테리어 필름 시공 이미지">
                         </div>
                         <p>인테리어 필름 시공</p>
                     </a>
                 </li>
-                <li class="list interior-7"><a href="#" class="listA">
-                    <div>
-                        <img
-                            src="https://global-uploads.webflow.com/5dca6326f628e03041212a3f/5dfac9c7f91dc52a71b1ba60_GettyImages-875210764.jpg"
-                            alt="붙박이장 시공 이미지">
-                    </div>
-                    <p>붙박이장 시공</p>
-                </a></li>
-                <li class="list interior-8">
-                    <a href="#" class="listA">
+                <li class="main__panel-item interior-7"><a href="#">
                         <div>
-                            <img
-                                src="https://global-uploads.webflow.com/5dca6326f628e03041212a3f/5dca71d152043c868873b6d7_james-baldwin-Szh_h2Avh5w-unsplash.jpg"
+                            <img src="https://global-uploads.webflow.com/5dca6326f628e03041212a3f/5dfac9c7f91dc52a71b1ba60_GettyImages-875210764.jpg"
+                                alt="붙박이장 시공 이미지">
+                        </div>
+                        <p>붙박이장 시공</p>
+                    </a></li>
+                <li class="main__panel-item interior-8">
+                    <a href="#">
+                        <div>
+                            <img src="https://global-uploads.webflow.com/5dca6326f628e03041212a3f/5dca71d152043c868873b6d7_james-baldwin-Szh_h2Avh5w-unsplash.jpg"
                                 alt="페인트 시공 이미지">
                         </div>
                         <p>페인트 시공</p>
                     </a>
                 </li>
-                <li class="list interior-9">
-                    <a href="#" class="listA">
+                <li class="main__panel-item interior-9">
+                    <a href="#">
                         <div>
-                            <img
-                                src="https://global-uploads.webflow.com/5dca6326f628e03041212a3f/5dfaf83db0741834d8480719_GettyImages-1135773156.jpg"
+                            <img src="https://global-uploads.webflow.com/5dca6326f628e03041212a3f/5dfaf83db0741834d8480719_GettyImages-1135773156.jpg"
                                 alt="신발장 시공 이미지">
                         </div>
                         <p>신발장 시공</p>
                     </a>
                 </li>
-                <li class="list interior-10">
-                    <a href="#" class="listA">
+                <li class="main__panel-item interior-10">
+                    <a href="#">
                         <div>
-                            <img
-                                src="https://global-uploads.webflow.com/5dca6326f628e03041212a3f/5dfac52dd6da960882a88a4b_GettyImages-1138775966.jpg"
+                            <img src="https://global-uploads.webflow.com/5dca6326f628e03041212a3f/5dfac52dd6da960882a88a4b_GettyImages-1138775966.jpg"
                                 alt="몰딩 시공 이미지">
                         </div>
                         <p>몰딩 시공</p>
                     </a>
                 </li>
-                <li class="list interior-11">
-                    <a href="#" class="listA">
+                <li class="main__panel-item interior-11">
+                    <a href="#">
                         <div>
-                            <img
-                                src="https://global-uploads.webflow.com/5dca6326f628e03041212a3f/5dca72e7475410dd738ec375_steven-ungermann-ARiqXAdxXgY-unsplash.jpg"
+                            <img src="https://global-uploads.webflow.com/5dca6326f628e03041212a3f/5dca72e7475410dd738ec375_steven-ungermann-ARiqXAdxXgY-unsplash.jpg"
                                 alt="화장실 리모델링 이미지">
                         </div>
                         <p>화장실 리모델링</p>
                     </a>
                 </li>
-                <li class="list interior-12">
-                    <a href="#" class="listA">
+                <li class="main__panel-item interior-12">
+                    <a href="#">
                         <div>
-                            <img
-                                src="https://global-uploads.webflow.com/5dca6326f628e03041212a3f/5def3197b4bb5e73e8fb8d7b_GettyImages-1144291835.jpg"
+                            <img src="https://global-uploads.webflow.com/5dca6326f628e03041212a3f/5def3197b4bb5e73e8fb8d7b_GettyImages-1144291835.jpg"
                                 alt="가벽/파티션 인테리어 이미지">
                         </div>
                         <p>가벽/파티션 인테리어</p>
                     </a>
                 </li>
-                <li class="list interior-13">
-                    <a href="#" class="listA">
+                <li class="main__panel-item interior-13">
+                    <a href="#">
                         <div>
-                            <img
-                                src="https://global-uploads.webflow.com/5dca6326f628e03041212a3f/5deeffb360bbd43a508a1a8f_jason-briscoe-GliaHAJ3_5A-unsplash.jpg"
+                            <img src="https://global-uploads.webflow.com/5dca6326f628e03041212a3f/5deeffb360bbd43a508a1a8f_jason-briscoe-GliaHAJ3_5A-unsplash.jpg"
                                 alt="주방 리모델링 이미지">
                         </div>
                         <p>주방 리모델링</p>
                     </a>
                 </li>
-                <li class="list interior-14">
-                    <a href="#" class="listA">
+                <li class="main__panel-item interior-14">
+                    <a href="#">
                         <div>
-                            <img
-                                src="https://global-uploads.webflow.com/5dca6326f628e03041212a3f/5e041b8b0b1ac50b39e72f6d_GettyImages-1181414100.jpg"
+                            <img src="https://global-uploads.webflow.com/5dca6326f628e03041212a3f/5e041b8b0b1ac50b39e72f6d_GettyImages-1181414100.jpg"
                                 alt="조명 인테리어 이미지">
                         </div>
                         <p>조명 인테리어</p>
                     </a>
                 </li>
-                <li class="list interior-15">
-                    <a href="#" class="listA">
+                <li class="main__panel-item interior-15">
+                    <a href="#">
                         <div>
-                            <img
-                                src="https://global-uploads.webflow.com/5dca6326f628e03041212a3f/5dfac76b2949f39bf89e2f99_GettyImages-1073671924.jpg"
+                            <img src="https://global-uploads.webflow.com/5dca6326f628e03041212a3f/5dfac76b2949f39bf89e2f99_GettyImages-1073671924.jpg"
                                 alt="칸막이 시공 이미지">
                         </div>
                         <p>칸막이 시공</p>
                     </a>
                 </li>
-                <li class="list interior-16">
-                    <a href="#" class="listA">
+                <li class="main__panel-item interior-16">
+                    <a href="#">
                         <div>
-                            <img
-                                src="https://global-uploads.webflow.com/5dca6326f628e03041212a3f/5df03effeda6fc7c85de5768_GettyImages-1139157578.jpg"
+                            <img src="https://global-uploads.webflow.com/5dca6326f628e03041212a3f/5df03effeda6fc7c85de5768_GettyImages-1139157578.jpg"
                                 alt="집 인테리어 이미지">
                         </div>
                         <p>집 인테리어</p>
                     </a>
                 </li>
-                <li class="list interior-17">
-                    <a href="#" class="listA">
+                <li class="main__panel-item interior-17">
+                    <a href="#">
                         <div>
-                            <img
-                                src="https://global-uploads.webflow.com/5dca6326f628e03041212a3f/5dca6e8bd358da35060a1fd2_nastuh-abootalebi-eHD8Y1Znfpk-unsplash.jpg"
+                            <img src="https://global-uploads.webflow.com/5dca6326f628e03041212a3f/5dca6e8bd358da35060a1fd2_nastuh-abootalebi-eHD8Y1Znfpk-unsplash.jpg"
                                 alt="상업공간 인테리어 이미지">
                         </div>
                         <p>상업공간 인테리어</p>
@@ -211,102 +192,145 @@
                 </li>
             </ul>
             <!-- floor -->
-            <ul class="contentsList floor"> 
-                <li class="list List1">
-                    <a href="#" class="listA">
+            <ul class="main__panel floor main__panel--visible">
+                <li class="main__panel-item floor-1">
+                    <a href="#">
                         <div>
-                            <img
-                                src="https://global-uploads.webflow.com/5dca6326f628e03041212a3f/5dedd171f88fbc98763ba6f2_64a143c3e8741ab52173e21e383cd222%20copy.jpg"
-                                alt="도배장판시공 이미지">
+                            <img src="https://global-uploads.webflow.com/5dca6326f628e03041212a3f/5df9c82eb6c9eb85777086a4_GettyImages-492865469.jpg"
+                                alt="마루 보수 이미지">
                         </div>
-                        <p>도배장판시공</p>
+                        <p>마루 보수</p>
                     </a>
                 </li>
-                
+                <li class="main__panel-item floor-2">
+                    <a href="#">
+                        <div>
+                            <img src="https://global-uploads.webflow.com/5dca6326f628e03041212a3f/5df9c6ff02010375df589f96_GettyImages-1144286256.jpg"
+                                alt="마루 시공 이미지">
+                        </div>
+                        <p>마루 시공</p>
+                    </a>
+                </li>
+                <li class="main__panel-item floor-3">
+                    <a href="#">
+                        <div>
+                            <img src="https://global-uploads.webflow.com/5dca6326f628e03041212a3f/5df9cd10020103a37758b64e_trang-nguyen-drke6MEs8Gg-unsplash.jpg"
+                                alt="카페트 시공 이미지">
+                        </div>
+                        <p>카페트 시공</p>
+                    </a>
+                </li>
+                <li class="main__panel-item floor-4">
+                    <a href="#">
+                        <div>
+                            <img src="https://global-uploads.webflow.com/5dca6326f628e03041212a3f/5deeff88b7aa5b1b874e0907_erica-indriana-NbLSljmLdNk-unsplash%20copy.jpg"
+                                alt="에폭시 바닥 시공 이미지">
+                        </div>
+                        <p>에폭시 바닥 시공</p>
+                    </a>
+                </li>
+                <li class="main__panel-item floor-5">
+                    <a href="#">
+                        <div>
+                            <img src="https://global-uploads.webflow.com/5dca6326f628e03041212a3f/5df9cb423a70bf50cc89c6c8_GettyImages-1134513577.jpg"
+                                alt="바닥재 시공 이미지">
+                        </div>
+                        <p>바닥재 시공</p>
+                    </a>
+                </li>
+                <li class="main__panel-item floor-6">
+                    <a href="#">
+                        <div>
+                            <img src="https://global-uploads.webflow.com/5dca6326f628e03041212a3f/5df9bdddb077f84e175a672a_GettyImages-1153249988.jpg"
+                                alt="층간소음매트 시공 이미지">
+                        </div>
+                        <p>층간소음매트 시공</p>
+                    </a>
+                </li>
             </ul>
             <!-- door-window -->
-            <ul class="contentsList door-window">
-                <li class="list List1">
-                    <a href="#" class="listA">
+            <ul class="main__panel door-window main__panel--visible">
+                <li class="main__panel-item DoWin-1">
+                    <a href="#">
                         <div>
-                            <img
-                                src="https://global-uploads.webflow.com/5dca6326f628e03041212a3f/5dedd171f88fbc98763ba6f2_64a143c3e8741ab52173e21e383cd222%20copy.jpg"
-                                alt="도배장판시공 이미지">
+                            <img src="" alt="">
                         </div>
-                        <p>도배장판시공</p>
+                        <p></p>
                     </a>
                 </li>
-                
+                <li class="main__panel-item DoWin-1">
+                    <a href="#">
+                        <div>
+                            <img src="" alt="">
+                        </div>
+                        <p></p>
+                    </a>
+                </li>
             </ul>
             <!-- appliances -->
-            <ul class="contentsList appliances">
-                <li class="list List1">
-                    <a href="#" class="listA">
+            <ul class="main__panel appliances">
+                <li class="main__panel-item List1">
+                    <a href="#">
                         <div>
-                            <img
-                                src="https://global-uploads.webflow.com/5dca6326f628e03041212a3f/5dedd171f88fbc98763ba6f2_64a143c3e8741ab52173e21e383cd222%20copy.jpg"
+                            <img src="https://global-uploads.webflow.com/5dca6326f628e03041212a3f/5dedd171f88fbc98763ba6f2_64a143c3e8741ab52173e21e383cd222%20copy.jpg"
                                 alt="도배장판시공 이미지">
                         </div>
                         <p>도배장판시공</p>
                     </a>
                 </li>
-                
+
             </ul>
             <!-- waterWorks-electronics -->
-            <ul class="contentsList waterWorks-electronics">
-                <li class="list List1">
-                    <a href="#" class="listA">
+            <ul class="main__panel waterWorks-electronics">
+                <li class="main__panel-item List1">
+                    <a href="#">
                         <div>
-                            <img
-                                src="https://global-uploads.webflow.com/5dca6326f628e03041212a3f/5dedd171f88fbc98763ba6f2_64a143c3e8741ab52173e21e383cd222%20copy.jpg"
+                            <img src="https://global-uploads.webflow.com/5dca6326f628e03041212a3f/5dedd171f88fbc98763ba6f2_64a143c3e8741ab52173e21e383cd222%20copy.jpg"
                                 alt="도배장판시공 이미지">
                         </div>
                         <p>도배장판시공</p>
                     </a>
                 </li>
-                
+
             </ul>
             <!-- furniture -->
-            <ul class="contentsList furniture">
-                <li class="list List1">
-                    <a href="#" class="listA">
+            <ul class="main__panel furniture">
+                <li class="main__panel-item List1">
+                    <a href="#">
                         <div>
-                            <img
-                                src="https://global-uploads.webflow.com/5dca6326f628e03041212a3f/5dedd171f88fbc98763ba6f2_64a143c3e8741ab52173e21e383cd222%20copy.jpg"
+                            <img src="https://global-uploads.webflow.com/5dca6326f628e03041212a3f/5dedd171f88fbc98763ba6f2_64a143c3e8741ab52173e21e383cd222%20copy.jpg"
                                 alt="도배장판시공 이미지">
                         </div>
                         <p>도배장판시공</p>
                     </a>
                 </li>
-                
+
             </ul>
             <!-- demolition-cleaner -->
-            <ul class="contentsList demolition-cleaner">
-                <li class="list List1">
-                    <a href="#" class="listA">
+            <ul class="main__panel demolition-cleaner">
+                <li class="main__panel-item List1">
+                    <a href="#">
                         <div>
-                            <img
-                                src="https://global-uploads.webflow.com/5dca6326f628e03041212a3f/5dedd171f88fbc98763ba6f2_64a143c3e8741ab52173e21e383cd222%20copy.jpg"
+                            <img src="https://global-uploads.webflow.com/5dca6326f628e03041212a3f/5dedd171f88fbc98763ba6f2_64a143c3e8741ab52173e21e383cd222%20copy.jpg"
                                 alt="도배장판시공 이미지">
                         </div>
                         <p>도배장판시공</p>
                     </a>
                 </li>
-                
+
             </ul>
             <!-- helper -->
-            <ul class="contentsList helper">
-                <li class="list List1">
-                    <a href="#" class="listA">
+            <ul class="main__panel helper">
+                <li class="main__panel-item List1">
+                    <a href="#">
                         <div>
-                            <img
-                                src="https://global-uploads.webflow.com/5dca6326f628e03041212a3f/5dedd171f88fbc98763ba6f2_64a143c3e8741ab52173e21e383cd222%20copy.jpg"
+                            <img src="https://global-uploads.webflow.com/5dca6326f628e03041212a3f/5dedd171f88fbc98763ba6f2_64a143c3e8741ab52173e21e383cd222%20copy.jpg"
                                 alt="도배장판시공 이미지">
                         </div>
                         <p>도배장판시공</p>
                     </a>
                 </li>
-                
+
             </ul>
         </section>
     </main>

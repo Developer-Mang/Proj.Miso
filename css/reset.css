@@ -2,10 +2,10 @@
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
     font: inherit;
     vertical-align: baseline;
     background-color: transparent;
+    vertical-align: top;
 }
 a{
     text-decoration: none;
@@ -16,11 +16,15 @@ ol,ul,li{
     list-style: none;
 }
 
-.hidden{
-    display:none;
+.a11y-hidden{
+    position: absolute;
+    overflow: hidden;
+    width: 1px;
+    height:1px;
+    padding-top:1px;
 }
 
-.floatClear::after{
+.clearfix::after{
     content:"";
     display:block;
     clear:both;
