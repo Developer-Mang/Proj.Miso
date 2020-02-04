@@ -18,14 +18,15 @@
     <header class="clearfix">
         <h1 class="header__logo"><a href="#"><img
                     src="https://global-uploads.webflow.com/5dca6326f628e03041212a3f/5e0188d0b7fd08beae0e3deb_miso%20logo_blue.png"
-                    alt="미소 더 많은 서비스"></a></h1>
+                    alt="미소"></a></h1>
         <nav><a href="#">HOME</a></nav>
     </header>
     <section class="visual">
-        <h2 class="a11y-hidden">Visual영역</h2>
-        <p class="visual__text--bgcover">생활의 모든 것, 미소</p>
+        <h2 class="visual__text--bgcover">생활의 모든 것, 미소 <span class="a11y-hidden">더 많은 서비스</span> </h2>
     </section>
     <main>
+        <h2 class=a11y-hidden>메인 영역</h2>
+        <h3 class=a11y-hidden>탭 패널 리스트</h3>
         <ul role="tablist" class="main__tablist" aria-label="미소 더 많은 서비스 카테고리">
             <li role="tab" id="interior-tab" class="main__tablist-item" aria-controls="interior-panel" aria-label="인테리어"
                 tabindex="0" aria-selected="true">인테리어</li>
@@ -44,7 +45,9 @@
                 aria-controls="demolition-cleaner-panel" aria-label="철거/청소" tabindex="0" aria-selected="false">철거/청소
             </li>
         </ul>
+        <h3 class="a11y-hidden">탭 패널 리스트</h3>
         <!-- interior -->
+        <h4 class="a11y-hidden" title="탭패널">인테리어</h4>
         <div role="tabpanel" id="interior-panel" class="main__tabpanel" aria-labelledby="interior-tab" tabindex="0">
             <ul class="tabpanel__list">
                 <!-- 에밋 문법
@@ -57,8 +60,6 @@
                             alt="도배장판 시공 이미지">
                         </div>
                         <p>도배장판 시공</p>
-                    </a>
-                </li>
                 <li class="tabpanel__list-item">
                     <a href="#" tilte="눈줄 시공">
                         <div>
@@ -206,7 +207,8 @@
             </ul>
         </div>
         <!-- floor -->
-        <div role="tabpanel" id="floor-panel" class="main__tabpanel" aria-labelledby="floor-tab" tabindex="0" hidden>
+        <h4 class="a11y-hidden" title="탭패널">바닥/마루</h4>
+        <div role="tabpanel" id="floor-panel" class="main__tabpanel" aria-labelledby="floor-tab" tabindex="0">
             <ul class="tabpanel__list">
                 <li class="tabpanel__list-item">
                     <a href="#" tilte="마루 보수">
@@ -265,6 +267,7 @@
             </ul>
         </div>
         <!-- door-window -->
+        <h4 class="a11y-hidden" title="탭패널">문/창문</h4>
         <div role="tabpanel" id="door-window-panel" class="main__tabpanel" aria-labelledby="door-window-tab"
             tabindex="0" hidden>
             <ul class="tabpanel__list">
@@ -329,6 +332,7 @@
             </ul>
         </div>
         <!-- appliances -->
+        <h4 class="a11y-hidden" title="탭패널">가전제품</h4>
         <div role="tabpanel" id="appliances-panel" class="main__tabpanel" aria-labelledby="appliances-tab" tabindex="0" hidden>
             <ul class="tabpanel__list">
                 <li class="tabpanel__list-item">
@@ -370,6 +374,7 @@
             </ul>
         </div>
         <!-- waterWorks-electronics -->
+        <h4 class="a11y-hidden" title="탭패널">수도/전기</h4>
         <div role="tabpanel" id="waterworks-electronics-panel" class="main__tabpanel"
             aria-labelledby="waterworks-electronics-tab" tabindex="0" hidden>
             <ul class="tabpanel__list">
@@ -412,6 +417,7 @@
             </ul>
         </div>
         <!-- furniture -->
+        <h4 class="a11y-hidden" title="탭패널">가구</h4>
         <div role="tabpanel" id="furniture-panel" class="main__tabpanel" aria-labelledby="furniture-tab" tabindex="0" hidden>
             <ul class="tabpanel__list">
                 <li class="tabpanel__list-item">
@@ -447,6 +453,7 @@
             </ul>
         </div>
         <!-- demolition-cleaner -->
+        <h4 class="a11y-hidden" title="탭패널">철거/청소</h4>
         <div role="tabpanel" id="demolition-cleaner-panel" class="main__tabpanel"
             aria-labelledby="demolition-cleaner-tab" tabindex="0" hidden>
             <ul class="tabpanel__list">
@@ -489,7 +496,9 @@
             </ul>
         </div>
     </main>
-    <footer></footer>
+    <footer>
+        <h2 class="a11y-hidden">풋터 영역</h2>
+    </footer>
 </body>
 
 </html>
