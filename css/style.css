@@ -27,16 +27,15 @@ header{
 }
 
 /* Header Navigation */
-header nav{
+.header__gotop{
     float:right;
-}
-
-header nav a{
+    width:90px;
     font-size:11px;
     font-weight:900;
     color: #055cf5;
-    line-height:7;
+    line-height:71px;
     letter-spacing: 1px;
+    text-align: center;
 }
 
 /* Visual */
@@ -151,7 +150,7 @@ main{
     width:100%;
     margin:0;
 }
-.tabpanel__list-item figcation{
+.tabpanel__list-item figcaption{
     display:block;
     font-size:20px;
     margin:10px;
@@ -168,9 +167,76 @@ main{
     background-color:black;
 }
 
-.tabpanel__list-item a:hover figcation, .tabpanel__list-item a:focus figcation{
+.tabpanel__list-item a:hover figcaption, .tabpanel__list-item a:focus figcaption{
     color:#32343a;
     font-weight: 600;
 }
 
 /* p,img 위치 스왑 예제 */
+#door-window-panel .tabpanel__list-item a{
+    display:flex;
+    flex-flow:column nowrap;
+}
+
+#door-window-panel .tabpanel__list-item p{
+    order:2;
+}
+
+/* 푸터  */
+footer{
+    border-top:1px solid #aaa;
+    padding:40px 50px;
+    display:flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+footer, footer a{
+    color:rgba(50,52,58,0.5);
+}
+footer a:hover, footer a:focus{
+    color:rgba(50,52,58,1);
+}
+
+footer>a{
+    margin-right:8px;
+}
+
+footer li{
+    display:inline-block;
+}
+
+
+footer>a ,footer li a{
+    padding:5px;
+}
+
+address{
+    order:-1;
+    width:40%;
+    margin-right:auto;
+    vertical-align: top;
+    font-size: 0.8rem;
+}
+
+address{
+    vertical-align: top;
+}
+
+address span{
+    white-space: unset;
+    margin-right:0.5em;
+}
+
+address span::after{
+    content:"";
+    display:inline-block;
+    width:1px;
+    height:0.8em;
+    border-right:1px solid #aaa;
+    margin-left:0.5em;
+}
+
+address span:last-child::after{
+    display:none;
+}
